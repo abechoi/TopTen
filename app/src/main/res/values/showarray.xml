@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="showArr">
+        <item>It\'s Always Sunny in Philadelphia</item>
+        <item>Bob\'s Burgers</item>
+        <item>Rick and Morty</item>
+        <item>Parks and Recreations</item>
+        <item>The Office</item>
+        <item>Community</item>
+        <item>Archer</item>
+        <item>Shameless</item>
+        <item>How I Met Your Mother</item>
+        <item>Arrested Development</item>
+    </string-array>
+</resources>
