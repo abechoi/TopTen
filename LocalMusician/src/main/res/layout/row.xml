@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_margin="2sp">
+        <TextView
+            android:id="@+id/event_title_tv"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/event_name"/>
+        <TextView
+            android:id="@+id/date_time_tv"
+            android:textSize="19sp"
+            android:layout_marginLeft="15sp"
+            android:layout_width="200sp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/date_string"
+            android:layout_marginTop="35sp"/>
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_marginTop="35sp"
+            android:layout_marginLeft="205sp"
+            android:layout_width="170sp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:text="@string/location"/>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

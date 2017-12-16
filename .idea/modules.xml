@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/LocalMusician/LocalMusician.iml" filepath="$PROJECT_DIR$/LocalMusician/LocalMusician.iml" />
       <module fileurl="file://$PROJECT_DIR$/TopTen.iml" filepath="$PROJECT_DIR$/TopTen.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LocalMusician/app.iml" filepath="$PROJECT_DIR$/LocalMusician/app.iml" />
     </modules>
   </component>
 </project>

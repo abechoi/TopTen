@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Top Ten</string>>
+    <string name="no_info">No description available.</string>
+    <string name="event_name">EVENT NAME HERE</string>
+    <string name="location">Los Angeles, CA</string>
+    <string name="date_string">01&#8211;25&#8211;2018 @ 8:00pm</string>
+    <string name="buy_button">BUY TICKETS</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</string>
+</resources>

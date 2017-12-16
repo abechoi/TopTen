@@ -7,14 +7,16 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.content.Intent;
 
+import com.ticketmaster.discovery.model.Event;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
 class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>{
 
-    ArrayList<ShowModel> list;
+    ArrayList<Event> list;
 
-    public MainAdapter(ArrayList<ShowModel> list) {
+    public MainAdapter(ArrayList<Event> list) {
         this.list = list;
     }
 
@@ -26,11 +28,10 @@ class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        ShowModel show = list.get(position);
+        Event event = list.get(position);
         // Setup the ViewHolder
-        holder.setup(show);
+        holder.setup(event);
     }
-
 
     public void remove(int position) {
         list.remove(position);
@@ -51,26 +52,26 @@ class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>{
 
 
 
-        private ShowModel show;
+        private Event event;
         private TextView titleTextView;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
-            titleTextView = itemView.findViewById(R.id.show_title);
+            titleTextView = itemView.findViewById(R.id.event_title_tv);
             itemView.setOnClickListener(this);
         }
 
-        public void setup(ShowModel show)
+        public void setup(Event event)
         {
-            this.show = show;
-            this.titleTextView.setText(show.getTitle());
+            this.event = event;
+            this.titleTextView.setText(event.getName());
         }
 
         @Override
         public void onClick(View view)
         {
-            Intent showIntent = ShowActivity.BuildIntent(this.show, view.getContext());
+            Intent showIntent = ShowActivity.BuildIntent(this.event, view.getContext());
             view.getContext().startActivity(showIntent);
         }
     }
